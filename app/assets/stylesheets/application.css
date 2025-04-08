@@ -14,3 +14,71 @@
  *= require_self
  *= require top
  */
+.site-header {
+  background-color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50; /* ← YUMEとはと同じ色に */
+  text-decoration: none;
+}
+
+.header-menus {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menus li a {
+  text-decoration: none;
+  color: #2c3e50; /* ← ここで文字色を自由に変えられる！ */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-menus li a:hover {
+  color: #e67e22; /* オレンジっぽいアクセントカラーに */
+}
+
+/* 投稿一覧ページ：夢のコンセプトに沿ったおしゃれカード */
+
+.posts-index {
+  padding-top: 60px;
+  background-color: #f8fbfd;
+}
+
+.posts-index-item {
+  background: linear-gradient(to bottom, #ffffff, #fdfdfd);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  padding: 24px 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.posts-index-item a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.posts-index-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(to bottom, #ffffff, #f7faff);
+}
+
+.posts-index-item a:hover {
+  color: #e67e22;
+}

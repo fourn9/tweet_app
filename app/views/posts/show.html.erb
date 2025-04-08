@@ -1,11 +1,11 @@
 <div class="main posts-show">
   <div class="container">
-    <div class="posts-show-item">
-      <p>
+    <div class="posts-show-item dreamy-card">
+      <p class="dream-content">
         <%= @post.content %>
       </p>
       <div class="post-time">
-        <%= @post.created_at %>
+        <%= @post.created_at.strftime("%Y年%m月%d日 %H:%M") %>
       </div>
     </div>
   </div>
